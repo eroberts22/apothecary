@@ -25,8 +25,8 @@ public class MainWindow {
     static FileInput fileInput;
     static Room room;
     int win_amount = 400;
-    String won_txt = "you collected " + win_amount + " gold. You win";
-    String lose_txt = "lmao you died";
+    String won_txt = "you collected " + win_amount + " gold. you win";
+    String lose_txt = "you died";
 
 
     /////////////////////////////////////////////////////////////////////////////////////
