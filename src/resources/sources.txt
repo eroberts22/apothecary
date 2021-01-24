@@ -1,0 +1,23 @@
+https://www.tutorialspoint.com/java/java_using_comparator.htm
+http://pages.cs.wisc.edu/~hasti/cs302/examples/Parsing/parseString.html
+http://pixelatorapp.com/
+- used to generate pixel art from personal drawings
+
+https://stackoverflow.com/questions/6045384/playing-mp3-and-wav-in-java
+- mp3 soundtrack
+
+https://stackoverflow.com/questions/953598/audio-volume-control-increase-or-decrease-in-java
+- audio volume
+
+https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html
+
+https://stackoverflow.com/questions/9864267/loading-resources-like-images-while-running-project-distributed-as-jar-archive
+
+https://stackoverflow.com/questions/1090098/newline-in-jlabel
+
+stuff wanted to implement:
+- life potion - adds to max hp
+- more enemies
+- better way to win game
+- enemy weakness to certain attacks
+- a start screen

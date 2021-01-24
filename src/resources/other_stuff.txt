@@ -1,0 +1,4 @@
+Unholy Serpent 70 15 20 lightning resources/sprites/ghost.png
+The Leviathan 200 40 50 fire resources/sprites/ghost.png
+
+TODO finish these sprites maybe
