@@ -37,7 +37,7 @@ public class MainWindow {
     JPanel main_panel, fight_panel, end_panel;
     JPanel direction, action, status_bar, bars, spell_btn_panel;
     JLabel fight_enemy_image,fight_status, end_txt;
-    JButton north,east,west,south, attack, search, stats, spells_list, use_hp_potion,use_sp_potion, exit_fight;
+    JButton north,east,west,south, attack, search, stats, spells_list, use_hp_potion,use_sp_potion, enemy_stats, exit_fight;
     JProgressBar hp_bar, sp_bar, enemy_hp_bar;
 
     /////////////////////////////////////////////////////////////////////////////////////
@@ -51,7 +51,7 @@ public class MainWindow {
     Color fight_text_color = new Color(0, 234, 255);
     Color end_text_color = new Color(217, 0, 255);
     Color spell_color = new Color(250, 153, 83);
-    Color hp_potion_color = new Color(234, 56, 56);
+    Color hp_potion_color = new Color(234, 40, 40);
     Color sp_potion_color = new Color(90, 236, 49);
     Color lp_potion_color = new Color(150, 48, 252);
 
@@ -410,6 +410,18 @@ public class MainWindow {
         add_fight(use_hp_potion,1,1);
         add_fight(use_sp_potion,1,2);
 
+        enemy_stats = new JButton("Enemy Stats");
+        enemy_stats.setEnabled(true);
+        enemy_stats.addActionListener(e -> {
+            JDialog dialog = new JDialog();
+            if (e.getSource() == enemy_stats) {
+                dialog.setAlwaysOnTop(true);
+                JOptionPane.showMessageDialog(dialog, game.getRooms()[game.getXPos()][game.getYPos()].getEnemy().toString(), "Current Enemy Status", JOptionPane.PLAIN_MESSAGE);
+            }
+        });
+
+        add_fight(enemy_stats, 1,3);
+
         // exit fight button
         exit_fight = new JButton("Exit Fight");
         exit_fight.setEnabled(false);
@@ -482,6 +494,7 @@ public class MainWindow {
                 enemy_hp_bar.setValue(0);
 
                 spell_btn_panel.removeAll();
+                enemy_stats.setEnabled(false);
 
                 exit_fight.setEnabled(true);
                 exit_fight.addActionListener(e -> {
@@ -611,6 +624,7 @@ public class MainWindow {
         fight_status.setForeground(fight_text_color);
         use_hp_potion.setBackground(hp_potion_color);
         use_sp_potion.setBackground(sp_potion_color);
+        enemy_stats.setBackground(fight_text_color);
         exit_fight.setBackground(buttons_color);
     }
 
