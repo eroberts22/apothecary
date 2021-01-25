@@ -19,7 +19,7 @@ public class TestEnemy {
         JPanel panel = new JPanel(new GridLayout(3,3,10,10));
 
         for (Enemy e: enemies) {
-            img = tk.createImage(e.getUrl());
+            img = tk.createImage(e.getURL());
             img = img.getScaledInstance(300, 300, Image.SCALE_SMOOTH);
             JLabel label = new JLabel();
             label.setIcon(new ImageIcon(img));

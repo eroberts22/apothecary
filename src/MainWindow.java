@@ -359,7 +359,7 @@ public class MainWindow {
      */
     private void generateFightScene() throws IOException {
         // enemy image
-        Image enemy_img = ImageIO.read(this.getClass().getResourceAsStream(room.getEnemy().getUrl()));
+        Image enemy_img = ImageIO.read(this.getClass().getResourceAsStream(room.getEnemy().getURL()));
         enemy_img = enemy_img.getScaledInstance(300,300,Image.SCALE_SMOOTH);
         fight_enemy_image = new JLabel(new ImageIcon(enemy_img));
         add_fight(fight_enemy_image,0,0);

@@ -22,7 +22,7 @@ public class MusicPlayer {
      * @throws UnsupportedAudioFileException unsupported audio
      */
     public void playMusic() throws IOException, LineUnavailableException, UnsupportedAudioFileException {
-        AudioInputStream audioIn = AudioSystem.getAudioInputStream(new File("src/resources/music/eerie_long.wav"));
+        AudioInputStream audioIn = AudioSystem.getAudioInputStream(new File("src/resources/music/eerie_melody.wav"));
         Clip clip = AudioSystem.getClip();
         clip.open(audioIn);
         FloatControl gainControl =

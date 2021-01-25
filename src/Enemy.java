@@ -39,7 +39,7 @@ public class Enemy {
         setMin_damage(min_damage);
         setMax_damage(max_damage);
         setWeakness(weakness);
-        setUrl(url);
+        setURL(url);
     }
 
     /**
@@ -108,7 +108,7 @@ public class Enemy {
      * set the picture url for an enemy
      * @param url url
      */
-    public void setUrl(String url) {
+    public void setURL(String url) {
         this.url = url;
     }
 
@@ -156,7 +156,7 @@ public class Enemy {
      * retrieve image url of enemy
      * @return String url
      */
-    public String getUrl() {
+    public String getURL() {
         return url;
     }
 }

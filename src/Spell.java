@@ -49,6 +49,17 @@ public class Spell implements Comparator<Spell>{
         return "\n" + name + "\n   Damage: " + damage + "\n   SP Cost: " + sp_cost + "\n   type: " + type;
     }
 
+    /**
+     * compare sp cost of two spells
+     * @param o1 spell 1
+     * @param o2 spell 2
+     * @return the smaller spell
+     */
+    @Override
+    public int compare(Spell o1, Spell o2) {
+        return o1.getSp_cost() - o2.getSp_cost();
+    }
+
     /////////////////////////////////////////////////////////////////////////////////////
     //////////////////////////////Get and Set Functions//////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////
@@ -107,14 +118,4 @@ public class Spell implements Comparator<Spell>{
         this.type = type;
     }
 
-    /**
-     * compare sp cost of two spells
-     * @param o1 spell 1
-     * @param o2 spell 2
-     * @return the smaller spell
-     */
-    @Override
-    public int compare(Spell o1, Spell o2) {
-        return o1.getSp_cost() - o2.getSp_cost();
-    }
 }

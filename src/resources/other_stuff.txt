@@ -1,4 +1,10 @@
 Unholy Serpent 70 15 20 lightning resources/sprites/ghost.png
 The Leviathan 200 40 50 fire resources/sprites/ghost.png
 
-TODO finish these sprites maybe
+
+stuff wanted to implement:
+- life potion - adds to max hp
+- more enemies (see above)
+- better way to win game
+- enemy weakness to certain attacks
+- a start screen w/ different characters

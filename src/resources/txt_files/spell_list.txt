@@ -1,6 +1,7 @@
 Punch 4 0 phys
 Stab 6 1 phys
 Slice 6 1 phys
+Icicle 10 3 ice
 Frost 10 3 ice
 Blizzard 20 8 ice
 Ember 10 3 fire

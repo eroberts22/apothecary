@@ -1,23 +1,28 @@
 https://www.tutorialspoint.com/java/java_using_comparator.htm
+- used to compare spells so when they are outputted as a string,
+  they are in a certain order
+
 http://pages.cs.wisc.edu/~hasti/cs302/examples/Parsing/parseString.html
+- parsing a string from a .txt file
+
 http://pixelatorapp.com/
-- used to generate pixel art from personal drawings
+- used to generate pixel art from my personal drawings
+- using personal license
 
 https://stackoverflow.com/questions/6045384/playing-mp3-and-wav-in-java
-- mp3 soundtrack
+- playing music in java
 
 https://stackoverflow.com/questions/953598/audio-volume-control-increase-or-decrease-in-java
-- audio volume
+- audio volume adjustment
 
 https://docs.oracle.com/javase/tutorial/uiswing/layout/gridbag.html
+- grid bag layout tutorial
 
 https://stackoverflow.com/questions/9864267/loading-resources-like-images-while-running-project-distributed-as-jar-archive
+- loading images into window
 
 https://stackoverflow.com/questions/1090098/newline-in-jlabel
+- how to make a new line in a jlabel
 
-stuff wanted to implement:
-- life potion - adds to max hp
-- more enemies
-- better way to win game
-- enemy weakness to certain attacks
-- a start screen
+Song Credit:
+Eerie Melody (eerie_melody.wav) by Cade Bowman

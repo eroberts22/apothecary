@@ -93,7 +93,7 @@ public class Room extends JPanel{
     private void init_enemy(Enemy enemy) throws IOException {
         enemy_bool = true;
 
-        enemy_img = ImageIO.read(this.getClass().getResourceAsStream(enemy.getUrl()));
+        enemy_img = ImageIO.read(this.getClass().getResourceAsStream(enemy.getURL()));
 
         if (enemy.getName().equals("Malicious Spectre")
                 || enemy.getName().equals("Stinging JellyFish")
